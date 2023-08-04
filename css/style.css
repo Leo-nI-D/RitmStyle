@@ -1,0 +1,103 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "El Messiri";
+  font-weight: 700;
+  src: url("../fonts/el-messiri-v22-latin-700.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/el-messiri-v22-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/el-messiri-v22-latin-700.woff2") format("woff2"), url("../fonts/el-messiri-v22-latin-700.woff") format("woff"), url("../fonts/el-messiri-v22-latin-700.ttf") format("truetype"), url("../fonts/el-messiri-v22-latin-700.svg#ElMessiri") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/proximanova_light.otf"), url("../fonts/proximanova_regular.ttf"), url("../fonts/proximanova_bold.otf");
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+html {
+  background: #162831;
+  font-size: 16px;
+}
+
+body {
+  font-size: 1rem;
+}
+
+ol,
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1300px;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .menu-list {
+  display: flex;
+  gap: 50px;
+}
+.header .menu-list .menu-link {
+  font-family: "Proxima Nova", sans-serif;
+}
+.header .btn {
+  background: #018abe;
+  padding: 9px 15px;
+  border-radius: 3px;
+  font-family: "Proxima Nova", sans-serif;
+}
+
+.hero .container {
+  background: url("../img/hero-bg.jpg") center no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 136px 355px 210px;
+  margin-bottom: 150px;
+}
+.hero .uptitle {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  font-family: "El Messiri", sans-serif;
+  align-items: center;
+  gap: 66px;
+  font-weight: 700;
+}
+.hero .uptitle::before {
+  content: "";
+  display: block;
+  background: #fff;
+  border-radius: 0px 50px;
+  width: 28px;
+  height: 14px;
+}
+.hero .uptitle::after {
+  content: "";
+  display: block;
+  background: #fff;
+  border-radius: 50px 0px;
+  width: 28px;
+  height: 14px;
+}
+.hero .title {
+  font-family: "El Messiri", sans-serif;
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+}
